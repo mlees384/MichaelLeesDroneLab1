@@ -11,7 +11,7 @@ public class Camera {
 	
 	private String make;
 	private String model;
-	private int weight;
+	private String weight;
 	private double size;
 	private String Resolution;
 	private int fps;

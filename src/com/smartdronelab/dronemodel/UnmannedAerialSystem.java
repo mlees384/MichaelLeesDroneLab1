@@ -11,7 +11,7 @@ public class UnmannedAerialSystem {
 
 	private String make;
 	private String model;
-	private int weight;
+	private String weight;
 	private double size;
 	
 	public void recieveData() {
