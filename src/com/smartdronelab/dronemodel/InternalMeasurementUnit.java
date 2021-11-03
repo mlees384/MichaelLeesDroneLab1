@@ -10,33 +10,15 @@ package com.smartdronelab.dronemodel;
 public class InternalMeasurementUnit extends Sensor {
 
 	@Override
-	public void receiveData() {
+	public void measureData() {
 		// TODO Auto-generated method stub
-		super.receiveData();
+		super.measureData();
 	}
 
 	@Override
 	public void sendData() {
 		// TODO Auto-generated method stub
 		super.sendData();
-	}
-
-	@Override
-	public void receiveCommand() {
-		// TODO Auto-generated method stub
-		super.receiveCommand();
-	}
-
-	@Override
-	public void sendCommand() {
-		// TODO Auto-generated method stub
-		super.sendCommand();
-	}
-
-	@Override
-	public void measureData() {
-		// TODO Auto-generated method stub
-		super.measureData();
 	}
 
 }
