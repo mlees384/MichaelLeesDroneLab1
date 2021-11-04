@@ -12,7 +12,8 @@ public class CollisionAvoidanceSensor extends Sensor {
 	private String maxDetectionRange;
 	private String sensorType;
 	
-	public void detectObject() {
+	public boolean detectObject() {
+		return true;
 		
 	}
 
