@@ -12,9 +12,9 @@ public class Camera {
 	private String make;
 	private String model;
 	private String weight;
-	private double size;
+	private String size;
 	private String Resolution;
-	private int fps;q
+	private int fps;
 	
 	public void takePicture() {
 		System.out.println("Took Picture");

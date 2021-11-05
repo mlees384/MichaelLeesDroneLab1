@@ -12,7 +12,7 @@ public class UnmannedAerialSystem {
 	private String make;
 	private String model;
 	private String weight;
-	private double size;
+	private String size;
 	
 	public void recieveData() {
 		System.out.println("Data Recieved");
