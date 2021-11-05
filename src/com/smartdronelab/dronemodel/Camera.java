@@ -17,19 +17,19 @@ public class Camera {
 	private int fps;
 	
 	public void takePicture() {
-		
+		System.out.println("Took Picture");
 	}
 	
 	public void startvideo() {
-		
+		System.out.println("Video Started");
 	}
 	
 	public void stopvideo() {
-		
+		System.out.println("Video Stopped");
 	}
 	
 	public void autoFocus() {
-		
+		System.out.println("Focused");
 	}
 
 }

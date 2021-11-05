@@ -15,11 +15,13 @@ public class UnmannedAerialSystem {
 	private double size;
 	
 	public void recieveData() {
-		
+		System.out.println("Data Recieved");
+		return;
 	}
 	
 	public void recieveCommand() {
-		
+		System.out.println("Command Received");
+		return;
 	}
 	
 	/**
@@ -29,5 +31,4 @@ public class UnmannedAerialSystem {
 		// TODO Auto-generated method stub
 
 	}
-
 }

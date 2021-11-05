@@ -14,11 +14,11 @@ public class SmartBattery {
 	private int mah;
 	
 	public void measurePower() {
-		
+		System.out.println("x% remaining");
 	}
 	
 	public void sendData() {
-		
+		System.out.println("Data Senmt");
 	}
 
 }

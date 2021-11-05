@@ -16,15 +16,15 @@ public class CommandStation {
 	private String screenSize;
 	
 	public void receiveData() {
-		
+		System.out.println("Data Recieved");
 	}
 	
 	public void sendCommand() {
-		
+		System.out.println("Command Sent");
 	}
 	
 	public void setWaypoints() {
-		
+		System.out.println("Waypoints Set");
 	}
 
 }

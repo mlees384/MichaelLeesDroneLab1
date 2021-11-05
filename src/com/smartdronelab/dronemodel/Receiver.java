@@ -14,11 +14,11 @@ public class Receiver {
 	private String frequency;
 	
 	public void receiveCommand() {
-		
+		System.out.println("Commmand Recieved");
 	}
 	
 	public void sendCommand() {
-		
+		System.out.println("Command Sent");
 	}
 
 }
