@@ -13,9 +13,9 @@ public class SmartBattery {
 	private int voltage;
 	private int mah;
 	
-	public void measurePower() {
-		System.out.println("x% remaining");
-		return;
+	public int measurePower() {
+		System.out.println("84% remaining");
+		return 84;
 	}
 	
 	public void sendData() {

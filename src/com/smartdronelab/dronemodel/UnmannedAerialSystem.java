@@ -9,7 +9,7 @@ package com.smartdronelab.dronemodel;
  */
 public class UnmannedAerialSystem {
 
-	private String make;
+	private S make;
 	private String model;
 	private String weight;
 	private String size;
