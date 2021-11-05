@@ -14,22 +14,26 @@ public class Camera {
 	private String weight;
 	private double size;
 	private String Resolution;
-	private int fps;
+	private int fps;q
 	
 	public void takePicture() {
 		System.out.println("Took Picture");
+		return;
 	}
 	
 	public void startvideo() {
 		System.out.println("Video Started");
+		return;
 	}
 	
 	public void stopvideo() {
 		System.out.println("Video Stopped");
+		return;
 	}
 	
 	public void autoFocus() {
 		System.out.println("Focused");
+		return;
 	}
 
 }

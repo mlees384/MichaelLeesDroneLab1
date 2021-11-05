@@ -17,14 +17,17 @@ public class CommandStation {
 	
 	public void receiveData() {
 		System.out.println("Data Recieved");
+		return;
 	}
 	
 	public void sendCommand() {
 		System.out.println("Command Sent");
+		return;
 	}
 	
 	public void setWaypoints() {
 		System.out.println("Waypoints Set");
+		return;
 	}
 
 }

@@ -15,10 +15,12 @@ public class Receiver {
 	
 	public void receiveCommand() {
 		System.out.println("Commmand Recieved");
+		return;
 	}
 	
 	public void sendCommand() {
 		System.out.println("Command Sent");
+		return;
 	}
 
 }

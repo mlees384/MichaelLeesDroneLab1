@@ -16,6 +16,7 @@ public class GPS extends Sensor {
 		// TODO Auto-generated method stub
 		super.measureData();
 		System.out.println("Data Measured");
+		return;
 	}
 
 	@Override
@@ -23,6 +24,7 @@ public class GPS extends Sensor {
 		// TODO Auto-generated method stub
 		super.sendData();
 		System.out.println("Data Sent");
+		return;
 	}
 
 }

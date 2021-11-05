@@ -13,10 +13,12 @@ public abstract class Sensor {
 	
 	public void measureData() {
 		System.out.println("Data Measured");
+		return;
 	}
 	
 	public void sendData() {
 		System.out.println("Data Sent");
+		return; 
 	}
 
 }

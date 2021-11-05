@@ -15,14 +15,17 @@ public class Light {
 	
 	public void receiveCommand() {
 		System.out.println("Command Recieved");
+		return;
 	}
 	
 	public void turnOn() {
 		System.out.println("On");
+		return;
 	}
 	
 	public void turnOff() {
 		System.out.println("Off");
+		return;
 	}
 
 }
