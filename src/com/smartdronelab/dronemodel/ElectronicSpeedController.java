@@ -6,8 +6,8 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
- *The ElectronicSpeedController is what sends commands to the motors after receiving
- *data from the commandStation and/or flightController.
+ * The ElectronicSpeedController is what sends commands to the motors after receiving
+ * data and/or commands from the commandStation and/or flightController.
  */
 public class ElectronicSpeedController extends Sensor {
 

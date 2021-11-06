@@ -6,8 +6,8 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
- *The CommandStation is the physical controller for the drone
- *that the pilot uses to send commands to the flightController.
+ * The CommandStation is the physical controller for the drone
+ * that the pilot uses to send commands to the flightController.
  */
 
 public class CommandStation {

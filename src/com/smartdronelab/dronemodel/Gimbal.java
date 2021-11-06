@@ -6,9 +6,9 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
- *The Gimbal is connected to the body of the drone, and the camera is connected to the gimbal.
- *It's function is to maintain the camera's baseline angle to facilitate smooth video capture.
- *It uses mechanical means and some input from sensors to accomplish this task.
+ * The Gimbal is connected to the body of the drone, and the camera is connected to the gimbal.
+ * It function is to maintain the camera's baseline angle to facilitate smooth video capture.
+ * It uses mechanical means and some input from sensors to accomplish this task.
  */
 public class Gimbal {
 	

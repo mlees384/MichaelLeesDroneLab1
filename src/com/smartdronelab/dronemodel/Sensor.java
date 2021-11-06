@@ -6,7 +6,7 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  * 
- * The sensor is an abstract class to generalize other sensor classes.
+ * The sensor class is an abstract class to generalize other sensor classes.
  *
  */
 public abstract class Sensor {

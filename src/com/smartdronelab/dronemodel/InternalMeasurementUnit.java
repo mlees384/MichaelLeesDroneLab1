@@ -6,8 +6,8 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
- *The InternalMeasurementUnit (IMU) measures internal forces on the
- *drone such as G-forces and sends that data to the flightController for action.
+ * The InternalMeasurementUnit (IMU) measures internal forces on the
+ * drone such as G-forces and sends that data to the flightController for action.
  */
 
 public class InternalMeasurementUnit extends Sensor {

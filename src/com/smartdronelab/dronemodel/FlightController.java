@@ -6,8 +6,8 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
- *The flightController can be thought of the brain of the entire system. It takes commands
- *from the commandStation and data from the sensors and takes action accordingly.
+ * The flightController can be thought of the brain of the entire system. It takes commands
+ * from the commandStation and data from the sensors and takes action accordingly.
  */
 public class FlightController {
 	
