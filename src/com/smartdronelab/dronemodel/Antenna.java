@@ -12,7 +12,7 @@ public class Antenna {
 	private String frequency;
 	
 	/**
-	 * The Antenna will sent imaging data from the camera back to the Command Station for viewing.
+	 * The Antenna will send imaging data from the camera back to the Command Station for viewing.
 	 */
 	
 	public void sendData() {
