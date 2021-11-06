@@ -6,7 +6,10 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
+ *The InternalMeasurementUnit (IMU) measures internal forces on the
+ *drone such as G-forces and sends that data to the flightController for action.
  */
+
 public class InternalMeasurementUnit extends Sensor {
 
 	@Override
@@ -23,6 +26,12 @@ public class InternalMeasurementUnit extends Sensor {
 		super.sendData();
 		System.out.println("Data Sent");
 		return;
+	}
+
+	@Override
+	public String receiveData() {
+		// TODO Auto-generated method stub
+		return super.receiveData();
 	}
 
 }

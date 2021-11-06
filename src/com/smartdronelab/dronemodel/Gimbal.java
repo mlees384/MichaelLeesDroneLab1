@@ -6,6 +6,9 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
+ *The Gimbal is connected to the body of the drone, and the camera is connected to the gimbal.
+ *It's function is to maintain the camera's baseline angle to facilitate smooth video capture.
+ *It uses mechanical means and some input from sensors to accomplish this task.
  */
 public class Gimbal {
 	
@@ -44,10 +47,20 @@ public class Gimbal {
 		return;
 	}
 	
+	/**
+	 * The setBaselineAngle method will run upon camera initialization or manually when prompted
+	 * by the user.
+	 */
+	
 	public void setBaselineAngle() {
 		System.out.println("Baseline Angle Set");
 		return;
 	}
+	
+	/**
+	 * the correctToBaselineAngle will happen almost perpetually as the drone moves
+	 * on it's different axes.
+	 */
 	
 	public void correctToBaselineAngle() {
 		System.out.println("Angle adjusted x degrees");

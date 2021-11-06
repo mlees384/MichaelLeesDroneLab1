@@ -5,6 +5,9 @@ package com.smartdronelab.dronemodel;
 
 /**
  * @author mlees
+ * 
+ * The SmartBattery exists solely to provide power to the drone, and to measure
+ * the remaining power and send that data to the FlightController for action.
  *
  */
 public class SmartBattery {

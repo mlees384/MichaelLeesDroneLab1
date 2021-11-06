@@ -9,7 +9,18 @@ package com.smartdronelab.dronemodel;
  */
 public class GPS extends Sensor {
 	
+	/**
+	 * The GPS unit needs to be connected to a minimum of four satellites
+	 * to function correctly.
+	 */
+	
 	private int numberofSatellites;
+
+	@Override
+	public String receiveData() {
+		// TODO Auto-generated method stub
+		return super.receiveData();
+	}
 
 	@Override
 	public void measureData() {

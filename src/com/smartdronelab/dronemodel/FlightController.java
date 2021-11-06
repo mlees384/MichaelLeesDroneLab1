@@ -6,6 +6,8 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
+ *The flightController can be thought of the brain of the entire system. It takes commands
+ *from the commandStation and data from the sensors and takes action accordingly.
  */
 public class FlightController {
 	
@@ -74,6 +76,21 @@ public class FlightController {
 	
 	public void stopFollowWaypoints() {
 		System.out.println("Resuming Manual Control");
+		return;
+	}
+	
+	/**
+	 * 20% of remaining battery is the "bingo" mark for the drone
+	 * to initiate it's returnHome command.
+	 */
+	
+	public boolean batteryLessOrEqual20(){
+		System.out.println("Battery At 20%");
+		return true;
+	}
+	
+	public void returnHome() {
+		System.out.println("Returning Home");
 		return;
 	}
 	

@@ -5,6 +5,9 @@ package com.smartdronelab.dronemodel;
 
 /**
  * @author mlees
+ * 
+ * The receiver received it's commands from the CommandStation and passes them
+ * on to the FlightController for action.
  *
  */
 public class Receiver {

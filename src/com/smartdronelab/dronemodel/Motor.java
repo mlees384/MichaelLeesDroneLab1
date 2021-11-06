@@ -5,7 +5,9 @@ package com.smartdronelab.dronemodel;
 
 /**
  * @author mlees
- *
+ * 
+ *The motor receives it's commands from the ElectronicSpeedController
+ *.
  */
 public class Motor {
 	

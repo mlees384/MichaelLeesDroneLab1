@@ -6,8 +6,16 @@ package com.smartdronelab.dronemodel;
 /**
  * @author mlees
  *
+ *The ElectronicSpeedController is what sends commands to the motors after receiving
+ *data from the commandStation and/or flightController.
  */
 public class ElectronicSpeedController extends Sensor {
+
+	@Override
+	public String receiveData() {
+		// TODO Auto-generated method stub
+		return super.receiveData();
+	}
 
 	@Override
 	public void measureData() {
