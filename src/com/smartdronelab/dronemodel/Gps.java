@@ -7,7 +7,7 @@ package com.smartdronelab.dronemodel;
  * @author mlees
  *
  */
-public class GPS extends Sensor {
+public class Gps extends Sensor {
 	
 	/**
 	 * The GPS unit needs to be connected to a minimum of four satellites

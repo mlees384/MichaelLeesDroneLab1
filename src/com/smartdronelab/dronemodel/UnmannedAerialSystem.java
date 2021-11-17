@@ -29,8 +29,8 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 	private ElectronicSpeedController ESC;
 	private FlightController FlightController;
 	private Gimbal Gimbal;
-	private GPS GPS;
-	private InternalMeasurementUnit IMU;
+	private Gps Gps;
+	private InternalMeasurementUnit Imu;
 	private Light FrontLeftLight;
 	private Light FrontRightLight;
 	private Light BackLeftLight;
@@ -58,8 +58,8 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 		ESC = new ElectronicSpeedController();
 		FlightController = new FlightController();
 		Gimbal = new Gimbal();
-		GPS = new GPS();
-		IMU = new InternalMeasurementUnit();
+		Gps = new Gps();
+		Imu = new InternalMeasurementUnit();
 		FrontLeftLight = new Light();
 		FrontRightLight = new Light();
 		BackLeftLight = new Light();
