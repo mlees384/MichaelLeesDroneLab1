@@ -32,5 +32,74 @@ public class CommandStation {
 		System.out.println("Waypoints Set");
 		return;
 	}
+	
+	public void onSticksDownandIn() {
+		System.out.println("Motors Engaged");
+		return;
+	}
+	
+	public void onStickAction() {
+		System.out.println("Executing Movement");
+		return;
+	}
+	
+	public void autoTakeoffTapped() {
+		System.out.println("Auto Launching");
+		return;
+	}
+	
+	public void onFlightModeToggle() {
+		System.out.println("Flight Mode Toggled");
+		return;
+	}
+	
+	public boolean onRightStickUp() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onRightStickDown() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onLeftStickRight() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onLeftStickLeft() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onRightStickRight() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onRightStickLeft() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onLeftStickUp() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onLeftStickDown() {
+		System.out.println("Stick Movement Detected");
+		return true;
+	}
+	
+	public boolean onBothSticksCentered() {
+		System.out.println("No Stick Movement Detected");
+		return true;
+	}
 
+	public boolean onCommenceRouteTapped() {
+		System.out.println("Commencing Route");
+		return true;
+	}
 }

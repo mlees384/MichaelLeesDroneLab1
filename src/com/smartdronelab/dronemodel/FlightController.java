@@ -14,7 +14,7 @@ public class FlightController {
 	private int maxInputs;
 	private int maxOutputs;
 	
-	public void recieveData() {
+	public void onRecieveData() {
 		System.out.println("Data Recieved");
 		return;
 	}
@@ -70,6 +70,11 @@ public class FlightController {
 	}
 	
 	public void startFollowWaypoints() {
+		System.out.println("Calculating Courses");
+		return;
+	}
+	
+	public void followWaypoints() {
 		System.out.println("Following Waypoints");
 		return;
 	}
@@ -84,8 +89,13 @@ public class FlightController {
 	 * to initiate it's returnHome command.
 	 */
 	
-	public boolean batteryLessOrEqual20(){
-		System.out.println("Battery At 20%");
+	public boolean onBatteryLess20(){
+		System.out.println("Battery Less Than 20%");
+		return true;
+	}
+	
+	public boolean onBatteryLess5(){
+		System.out.println("Battery Less Than 5%");
 		return true;
 	}
 	
@@ -94,4 +104,34 @@ public class FlightController {
 		return;
 	}
 	
+	public void hover() {
+		System.out.println("Returning Home");
+		return;
+	}
+	
+	public void commenceAutoLand() {
+		System.out.println("Landing");
+		return;
+	}
+	
+	public void calculatePath() {
+		System.out.println("Path Calculated");
+		return;
+	}
+	
+	public void executePath() {
+		System.out.println("Executing Path");
+		return;
+	}
+	
+	public void returnToOperation() {
+		System.out.println("Returning To Operation");
+		return;
+	}
+	
+	public boolean acknowledgeCommmand() {
+		System.out.println("Command Acknowledged");
+		return true;
+	}
+
 }

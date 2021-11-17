@@ -17,7 +17,7 @@ public class CollisionAvoidanceSensor extends Sensor {
 	 * distance to said object and send that data for the flight controller for action.
 	 */
 	
-	public boolean detectObject() {
+	public boolean onDetectObject() {
 		System.out.println("Object Detected");
 		return true;
 	}

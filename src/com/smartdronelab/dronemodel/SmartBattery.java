@@ -25,5 +25,10 @@ public class SmartBattery {
 		System.out.println("Data Sent");
 		return;
 	}
+	
+	public void doublePress() {
+		System.out.println("Powered On");
+		return;
+	}
 
 }
