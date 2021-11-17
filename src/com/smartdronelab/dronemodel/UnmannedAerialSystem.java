@@ -26,7 +26,7 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 	private CollisionAvoidanceSensor CASensorFront;
 	private CollisionAvoidanceSensor CASensorBack;
 	private CommandStation SmartController;
-	private ElectronicSpeedController ESC;
+	private ElectronicSpeedController Esc;
 	private FlightController FlightController;
 	private Gimbal Gimbal;
 	private Gps Gps;
@@ -55,7 +55,7 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 		CASensorFront = new CollisionAvoidanceSensor();
 		CASensorBack = new CollisionAvoidanceSensor();
 		SmartController = new CommandStation();
-		ESC = new ElectronicSpeedController();
+		Esc = new ElectronicSpeedController();
 		FlightController = new FlightController();
 		Gimbal = new Gimbal();
 		Gps = new Gps();
