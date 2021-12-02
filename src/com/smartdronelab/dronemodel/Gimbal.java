@@ -3,6 +3,9 @@
  */
 package com.smartdronelab.dronemodel;
 
+import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
+
 /**
  * @author mlees
  *
@@ -10,12 +13,16 @@ package com.smartdronelab.dronemodel;
  * It function is to maintain the camera's baseline angle to facilitate smooth video capture.
  * It uses mechanical means and some input from sensors to accomplish this task.
  */
-public class Gimbal {
+public class Gimbal implements SelfCheckCapable {
 	
 	private String xRotationMax;
 	private String yRotationMax;
 	private String rotationRate;
 	private String defaultAngle;
+	
+	public Gimbal() {
+		
+	}
 	
 	public void yawRight() {
 		System.out.println("Yawed Right x Degrees");
@@ -67,4 +74,22 @@ public class Gimbal {
 		return;
 	}
 
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.1);
+	}
+	
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "My Gimbal";
+	}
+
+	@Override
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.basicSelfCheckRunner(this);
+	}
+	
 }

@@ -11,6 +11,10 @@ package com.smartdronelab.dronemodel;
  */
 
 public class InternalMeasurementUnit extends Sensor {
+	
+	public InternalMeasurementUnit() {
+		
+	}
 
 	@Override
 	public void measureData() {

@@ -3,16 +3,23 @@
  */
 package com.smartdronelab.dronemodel;
 
+import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
+
 /**
  * @author mlees
  *
  * The flightController can be thought of the brain of the entire system. It takes commands
  * from the commandStation and data from the sensors and takes action accordingly.
  */
-public class FlightController {
+public class FlightController implements SelfCheckCapable {
 	
 	private int maxInputs;
 	private int maxOutputs;
+	
+	public FlightController() {
+		
+	}
 	
 	public void onRecieveData() {
 		System.out.println("Data Recieved");
@@ -132,6 +139,24 @@ public class FlightController {
 	public boolean acknowledgeCommmand() {
 		System.out.println("Command Acknowledged");
 		return true;
+	}
+	
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.1);
+	}
+	
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "My Flight Controller";
+	}
+
+	@Override
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
 }

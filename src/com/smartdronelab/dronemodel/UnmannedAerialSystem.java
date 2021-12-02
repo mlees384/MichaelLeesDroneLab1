@@ -17,20 +17,20 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 	private String model;
 	private String weight;
 	private String size;
-	private Antenna Antenna;
-	private Camera Hasselblad;
+	private Antenna myAntenna;
+	private Camera myHasselblad;
 	private CollisionAvoidanceSensor CASensorTop;
 	private CollisionAvoidanceSensor CASensorBottom;
 	private CollisionAvoidanceSensor CASensorLeft;
 	private CollisionAvoidanceSensor CASensorRight;
 	private CollisionAvoidanceSensor CASensorFront;
 	private CollisionAvoidanceSensor CASensorBack;
-	private CommandStation SmartController;
-	private ElectronicSpeedController Esc;
-	private FlightController FlightController;
-	private Gimbal Gimbal;
-	private Gps Gps;
-	private InternalMeasurementUnit Imu;
+	private CommandStation mySmartController;
+	private ElectronicSpeedController myESC;
+	private FlightController myFlightController;
+	private Gimbal myGimbal;
+	private GPS myGPS;
+	private InternalMeasurementUnit myIMU;
 	private Light FrontLeftLight;
 	private Light FrontRightLight;
 	private Light BackLeftLight;
@@ -40,26 +40,31 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 	private Propeller Prop2;
 	private Propeller Prop3;
 	private Propeller Prop4;
-	private Receiver Receiver;
+	private Receiver myReceiver;
 	private Sensor Sensor;
-	private SmartBattery Battery;
+	private SmartBattery myBattery;
+	private Server DJIServer;
+	private Motor Motor1;
+	private Motor Motor2;
+	private Motor Motor3;
+	private Motor Motor4;
 	
 	
 	public UnmannedAerialSystem() {
-		Antenna = new Antenna();
-		Hasselblad = new Camera();
+		myAntenna = new Antenna();
+		myHasselblad = new Camera();
 		CASensorTop = new CollisionAvoidanceSensor();
 		CASensorBottom = new CollisionAvoidanceSensor();
 		CASensorLeft = new CollisionAvoidanceSensor();
 		CASensorRight = new CollisionAvoidanceSensor();
 		CASensorFront = new CollisionAvoidanceSensor();
 		CASensorBack = new CollisionAvoidanceSensor();
-		SmartController = new CommandStation();
-		Esc = new ElectronicSpeedController();
-		FlightController = new FlightController();
-		Gimbal = new Gimbal();
-		Gps = new Gps();
-		Imu = new InternalMeasurementUnit();
+		mySmartController = new CommandStation();
+		myESC = new ElectronicSpeedController();
+		myFlightController = new FlightController();
+		myGimbal = new Gimbal();
+		myGPS = new GPS();
+		myIMU = new InternalMeasurementUnit();
 		FrontLeftLight = new Light();
 		FrontRightLight = new Light();
 		BackLeftLight = new Light();
@@ -69,8 +74,13 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 		Prop2 = new Propeller();
 		Prop3 = new Propeller();
 		Prop4 = new Propeller();
-		Receiver = new Receiver();
-		Battery = new SmartBattery();
+		myReceiver = new Receiver();
+		myBattery = new SmartBattery();
+		DJIServer = new Server();
+		Motor1 = new Motor();
+		Motor2 = new Motor();
+		Motor3 = new Motor();
+		Motor4 = new Motor();
 		
 	}
 	
@@ -128,13 +138,115 @@ public class UnmannedAerialSystem implements SelfCheckCapable {
 		
 	}
 	
+	public void powerOn() {
+		System.out.println("On");
+		return;
+		
+	}
+	
+	public void installUpdate() {
+		System.out.println("Installing Update");
+		return;
+		
+	}
+	
+	public boolean completeUpdate() {
+		System.out.println("Update Complete");
+		return true;
+		
+	}
+	
+	public boolean onConnectionLost() {
+		System.out.println("Connection Lost");
+		return true;
+		
+	}
+	
+	public void adjustLandingSite() {
+		System.out.println("Adjusting Landing Site");
+		return;
+		
+	}
+	
+	public void autoLand() {
+		System.out.println("Landing");
+		return;
+		
+	}
+	
+	public void forceAutoLand() {
+		System.out.println("Forcing Landing");
+		return;
+		
+	}
+	
 	/**
 	 * @param args
 	 */
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		UnmannedAerialSystem mavic2Pro = new UnmannedAerialSystem();
-		mavic2Pro.runSelfCheck();
+		UnmannedAerialSystem Mavic2Pro = new UnmannedAerialSystem();
+		SmartBattery myBattery = new SmartBattery();
+		Server DJIServer = new Server();
+		Receiver myReceiver = new Receiver();
+		Propeller Prop1 = new Propeller();
+		Propeller Prop2 = new Propeller();
+		Propeller Prop3 = new Propeller();
+		Propeller Prop4 = new Propeller();
+		Motor Motor1 = new Motor();
+		Motor Motor2 = new Motor();
+		Motor Motor3 = new Motor();
+		Motor Motor4 = new Motor();
+		Light FrontLeftLight = new Light();
+		Light FrontRightLight = new Light();
+		Light BackLeftLight = new Light();
+		Light BackRightLight = new Light();
+		Gimbal myGimbal = new Gimbal();
+		FlightController myFlightController = new FlightController();
+		CommandStation mySmartController = new CommandStation();
+		Camera myHasselblad = new Camera();
+		Antenna myAntenna = new Antenna();
+		InternalMeasurementUnit myIMU = new InternalMeasurementUnit();
+		GPS myGPS = new GPS();
+		ElectronicSpeedController myESC = new ElectronicSpeedController();
+		CollisionAvoidanceSensor CASensorTop = new CollisionAvoidanceSensor();
+		CollisionAvoidanceSensor CASensorBottom = new CollisionAvoidanceSensor();
+		CollisionAvoidanceSensor CASensorLeft = new CollisionAvoidanceSensor();
+		CollisionAvoidanceSensor CASensorRight = new CollisionAvoidanceSensor();
+		CollisionAvoidanceSensor CASensorFront = new CollisionAvoidanceSensor();
+		CollisionAvoidanceSensor CASensorBack = new CollisionAvoidanceSensor();
+		Mavic2Pro.runSelfCheck();
+		myBattery.runSelfCheck();
+		DJIServer.runSelfCheck();
+		myReceiver.runSelfCheck();
+		Prop1.runSelfCheck();
+		Prop2.runSelfCheck();
+		Prop3.runSelfCheck();
+		Prop4.runSelfCheck();
+		Motor1.runSelfCheck();
+		Motor2.runSelfCheck();
+		Motor3.runSelfCheck();
+		Motor4.runSelfCheck();
+		FrontLeftLight.runSelfCheck();
+		FrontRightLight.runSelfCheck();
+		BackLeftLight.runSelfCheck();
+		BackRightLight.runSelfCheck();
+		myGimbal.runSelfCheck();
+		myFlightController.runSelfCheck();
+		mySmartController.runSelfCheck();
+		myHasselblad.runSelfCheck();
+		myAntenna.runSelfCheck();
+		myIMU.runSelfCheck();
+		myGPS.runSelfCheck();
+		myESC.runSelfCheck();
+		CASensorTop.runSelfCheck();
+		CASensorBottom.runSelfCheck();
+		CASensorLeft.runSelfCheck();
+		CASensorRight.runSelfCheck();
+		CASensorFront.runSelfCheck();
+		CASensorBack.runSelfCheck();
+		
 	}
 
 	@Override

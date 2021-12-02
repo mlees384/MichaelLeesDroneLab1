@@ -10,6 +10,10 @@ package com.smartdronelab.dronemodel;
  * data and/or commands from the commandStation and/or flightController.
  */
 public class ElectronicSpeedController extends Sensor {
+	
+	public ElectronicSpeedController() {
+		
+	}
 
 	@Override
 	public String receiveData() {

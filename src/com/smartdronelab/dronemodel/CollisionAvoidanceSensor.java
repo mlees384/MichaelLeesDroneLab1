@@ -12,6 +12,10 @@ public class CollisionAvoidanceSensor extends Sensor {
 	private String maxDetectionRange;
 	private String sensorType;
 	
+	public CollisionAvoidanceSensor() {
+		
+	}
+	
 	/**
 	 * If the detectObject method detects an object it will then measure the
 	 * distance to said object and send that data for the flight controller for action.

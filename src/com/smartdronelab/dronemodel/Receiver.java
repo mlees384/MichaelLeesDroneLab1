@@ -3,6 +3,9 @@
  */
 package com.smartdronelab.dronemodel;
 
+import edu.fiu.sysdesign.SelfCheckCapable;
+import edu.fiu.sysdesign.SelfCheckUtils;
+
 /**
  * @author mlees
  * 
@@ -10,7 +13,11 @@ package com.smartdronelab.dronemodel;
  * on to the FlightController for action.
  *
  */
-public class Receiver {
+public class Receiver implements SelfCheckCapable {
+	
+	public Receiver() {
+		
+	}
 	
 	private String communicationType;
 	private String numberOfChannels;
@@ -24,6 +31,24 @@ public class Receiver {
 	public void sendCommand() {
 		System.out.println("Command Sent");
 		return;
+	}
+	
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.randomCheck(0.1);
+	}
+	
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "My Receiver";
+	}
+
+	@Override
+	public boolean runSelfCheck() {
+		// TODO Auto-generated method stub
+		return SelfCheckUtils.basicSelfCheckRunner(this);
 	}
 
 }
